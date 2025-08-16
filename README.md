@@ -1,69 +1,79 @@
-# React + TypeScript + Vite
+# Formulario de Detalles Personales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un formulario web moderno y responsivo para la captura de datos personales, desarrollado en React y TypeScript, usando Bootstrap para el diseño visual y estilos personalizados para una experiencia de usuario profesional.  
+Puedes ver la aplicación en funcionamiento aquí: [https://detalles-personales.vercel.app/](https://detalles-personales.vercel.app/)
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (con [Vite](https://vitejs.dev/) para desarrollo rápido)
+- **TypeScript** (tipado estático y desarrollo seguro)
+- **Bootstrap 5** (diseño responsivo y componentes visuales)
+- **CSS personalizado** (para un aspecto moderno y profesional)
+- **Deploy en [Vercel](https://vercel.com/)**
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Formulario de captura de datos personales (saludo, nombre, apellido, género, email, fecha de nacimiento y dirección)
+- Diseño completamente responsivo, se adapta a móviles, tablets y escritorio
+- Validaciones básicas y retroalimentación instantánea
+- Radios de selección de género con resaltado visual
+- Fondo elegante y limpio, con formulario centralizado
+- Código limpio y fácil de mantener
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Demo en producción
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Puedes probar la aplicación funcionando en:  
+👉 [https://detalles-personales.vercel.app/](https://detalles-personales.vercel.app/)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación y uso local
+
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/tuusuario/tu-repo.git
+   cd tu-repo
+   ```
+
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Inicia la aplicación en desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+4. Abre [http://localhost:5173/](http://localhost:5173/) en tu navegador para ver el formulario.
+
+## Estructura del proyecto
+
+```
+src/
+├── App.tsx
+├── PersonalDetailsForm.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `PersonalDetailsForm.tsx`: Componente principal del formulario
+- `index.css`: Estilos globales y personalizados
+- `App.tsx`/`main.tsx`: Configuración base de la app
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Despliegue
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+El proyecto está configurado para desplegarse fácilmente en [Vercel](https://vercel.com/), pero puedes usar cualquier host de aplicaciones estáticas.
+
+## Personalización
+
+- Puedes ajustar los campos del formulario o los estilos desde los archivos `PersonalDetailsForm.tsx` e `index.css`.
+- Si deseas cambiar los colores o el fondo, edita el CSS según tus preferencias.
+
+## Licencia
+
+Este proyecto se entrega como base para prácticas y aprendizaje.  
+Puedes usarlo, modificarlo y compartirlo libremente.
+
+---
+
+**Desarrollado por [waynergt](https://github.com/waynergt)**  
+Prueba la app en: [https://detalles-personales.vercel.app/](https://detalles-personales.vercel.app/)
