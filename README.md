@@ -68,10 +68,6 @@ El proyecto está configurado para desplegarse fácilmente en [Vercel](https://v
 - Puedes ajustar los campos del formulario o los estilos desde los archivos `PersonalDetailsForm.tsx` e `index.css`.
 - Si deseas cambiar los colores o el fondo, edita el CSS según tus preferencias.
 
-## Licencia
-
-Este proyecto se entrega como base para prácticas y aprendizaje.  
-Puedes usarlo, modificarlo y compartirlo libremente.
 
 ---
 
